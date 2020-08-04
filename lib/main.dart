@@ -51,6 +51,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 color: Colors.red,
               );
             return Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
                 Padding(
                     padding: const EdgeInsets.symmetric(horizontal: 24),
@@ -60,36 +61,36 @@ class _MyHomePageState extends State<MyHomePage> {
                           index.toString(),
                           textAlign: TextAlign.center,
                         ))),
-                Container(
-                    margin: const EdgeInsets.only(left: 12),
-                    width: 100,
-                    decoration: BoxDecoration(
-                      border: Border.all(color: Colors.black),
-                    ),
+                Expanded(
+                  child: Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 12),
                     child: TextField(
                       decoration: InputDecoration(
                           border: OutlineInputBorder(), labelText: 'Test1'),
-                    )),
-                Container(
-                    margin: const EdgeInsets.only(left: 12),
-                    width: 100,
-                    decoration: BoxDecoration(
-                      border: Border.all(color: Colors.black),
+                      maxLines: null,
                     ),
+                  )
+                ),
+                Expanded(
+                  child: Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 12),
                     child: TextField(
                       decoration: InputDecoration(
                           border: OutlineInputBorder(), labelText: 'Test2'),
-                    )),
-                Container(
-                    margin: const EdgeInsets.only(left: 12),
-                    width: 100,
-                    decoration: BoxDecoration(
-                      border: Border.all(color: Colors.black),
+                      maxLines: null,
                     ),
+                  )
+                ),
+                Expanded(
+                  child: Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 12),
                     child: TextField(
                       decoration: InputDecoration(
                           border: OutlineInputBorder(), labelText: 'Test3'),
-                    )),
+                      maxLines: null,
+                    ),
+                  )
+                ),
               ],
             );
           },
