@@ -46,7 +46,7 @@ class _MyHomePageState extends State<MyHomePage> {
       viewID,
       (int id) => IFrameElement()
           ..style.border = 'none'
-          ..src = '/assets/test.html');
+          ..src = './assets/test.html');
   }
 
   @override
