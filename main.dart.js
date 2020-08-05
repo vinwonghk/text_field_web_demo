@@ -36742,7 +36742,7 @@ return new M.ov(new E.m6(r,new P.an(1/0,56),s),new E.oz(new G.n5("test-html",s),
 F.N5.prototype={
 $1:function(a){var s=document.createElement("iframe"),r=s.style
 r.border="none"
-s.src="/assets/test.html"
+s.src="./assets/test.html"
 return s},
 $S:149}
 E.l5.prototype={
